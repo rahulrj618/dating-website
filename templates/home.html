@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            color: #343a40;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .links {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    {% include 'navbar.html' %}
+    
+    <div class="container">
+        <h1>Welcome to our Website</h1>
+        <div class="links">
+            <a href="signup/">Sign Up</a>
+            <br>
+            <br>
+            Already logged in? Please <a href="login/">Login</a> to continue
+        </div>
+    </div>
+    
+    {% include 'footer.html' %}
+</body>
+</html>
